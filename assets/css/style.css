@@ -13,11 +13,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
-
+.container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
 /* Header */
 .container-header{
-    width: 90%;
+    background-color: white;
+    width: 100%;
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -31,7 +40,7 @@ body {
     width: 25%;
     height: 100%;
     margin-right: 20%;
-    margin-left: 25%;
+    /* margin-left: 25%; */
     orientation: vertical;
     align-items: center;
     background: white;
@@ -59,7 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     orientation: vertical;
-    margin-left: 7%;
+    /* margin-left: 7%; */
 }
 
 .container-info{
@@ -84,6 +93,7 @@ body {
 
 /* content */
 .container-content{
+    background-color: white;
     display: flex;
     justify-content: center; 
 }
@@ -130,7 +140,8 @@ body {
 }
 
 .container-about-me{
-    width: calc(78% - 15px);
+    background-color: white;
+    width: calc(80% - 15px);
     display: flex;
     justify-content: center; 
 }
@@ -178,3 +189,22 @@ p {
     height: 100vh;
     margin: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .container-about-me {
+        width: 100%;
+    }
+
+}
+
