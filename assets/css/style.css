@@ -130,12 +130,13 @@ body {
 }
 
 .container-about-me{
+    width: calc(78% - 15px);
     display: flex;
     justify-content: center; 
 }
 
 .about-me{
-    width: calc(78% - 15px);
+    /* width: calc(78% - 15px); */
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
