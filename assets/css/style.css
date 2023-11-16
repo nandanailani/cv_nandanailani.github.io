@@ -64,7 +64,7 @@ body {
 }
 
 .contact{
-    width: 50%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     orientation: vertical;
@@ -94,6 +94,7 @@ body {
 /* content */
 .container-content{
     background-color: white;
+    width: 100%;
     display: flex;
     justify-content: center; 
 }
@@ -109,7 +110,7 @@ body {
 }
 
 .content{
-    width: 50%;
+    width: 75%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -141,7 +142,7 @@ body {
 
 .container-about-me{
     background-color: white;
-    width: calc(80% - 15px);
+    width: 100%;
     display: flex;
     justify-content: center; 
 }
