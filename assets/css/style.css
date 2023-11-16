@@ -17,6 +17,7 @@ body {
 
 /* Header */
 .container-header{
+    width: 90%;
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -91,7 +92,7 @@ body {
     width: 25%;
     height: 100%;
     orientation: vertical;
-    align-items: center;
+    /* align-items: center; */
     background: white;
     display: flex;
     flex-direction: column;
@@ -110,17 +111,47 @@ body {
 .education{
     margin-top: 20px;
     text-align: left;
+    position: relative;
 }
+
+/* .education h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px; 
+    width: 10px;
+    height: 100%;
+    background-color: #6C9AC3;
+} */
 
 .skills{
     margin-top: 20px;
     text-align: left;
-    margin-right: 60px;
+}
+
+.container-about-me{
+    display: flex;
+    justify-content: center; 
 }
 
 .about-me{
+    width: calc(78% - 15px);
     margin-top: 20px;
-    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: justify;
+    position: relative;
+    /* justify-content: center; */
+}
+
+.about-me::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px; 
+    width: 10px;
+    height: 100%;
+    background-color: #6C9AC3;
 }
 
 .work-experience{
