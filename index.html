@@ -2,144 +2,386 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>CV  Nanda Restu Nailani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/style.css">    <title>CV  Nanda Restu Nailani</title>
     <link rel="icon" href="assets/images/cv.png" type="image/png">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="container">
-            <div class="container-header">
-                <div class="header">
-                    <div class="container-circle">
-                        <div class="circle">
-                            <img alt="Nanda" src="assets/images/nanda.jpg">
-                        </div>
+    <!-- Menu -->
+    <nav>
+        <div class="wrapper">
+            <div class="menu">
+
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <ul>
+                    <li><a href="#header" onclick="scrollToSection('header')">Home</a></li>
+                    <li><a href="#container-about-me"onclick="scrollToSection('container-about-me')">Tentang Saya</a></li>
+                    <li><a href="#container-keahlian"onclick="scrollToSection('container-keahlian')">Keahlian</a></li>
+                    <li><a href="#container-pengalaman"onclick="scrollToSection('container-pengalaman')">Pengalaman</a></li>
+                    <li><a href="#container-pendidikan"onclick="scrollToSection('container-pendidikan')">Pendidikan</a></li>
+                    <li><a href="#container-portofolio"onclick="scrollToSection('container-portofolio')">Portofolio</a></li>
+                    <li><a href="#container-contact"onclick="scrollToSection('kontak')">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-opacity"></div>
+        <!-- Content Header -->
+        <div class="content-header">
+            
+            <div class="contact">
+                <h1>Nanda Restu Nailani</h1>
+                <p>Mobile Developer | React Native Developer | Junior Programmer</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tentang Saya -->
+    <div class="container-about-me" id="container-about-me">
+        <section id="about-me">
+            <h1>Tentang Saya</h1>
+            <div class="content-about-me">
+                <div class="container-circle">
+                    <div class="circle">
+                        <img alt="Nanda" src="assets/images/nanda.jpg">
                     </div>
                 </div>
-    
-                <div class="contact">
-                    <h1>Nanda Restu Nailani</h1>
-                    <div class="container-info">
-                        <div class="info-contact">
-                            <div class="data-contact">
+
+                <div class="description-about-me">
+                    <p>Saya seorang lulusan jurusan Rekayasa Perangkat Lunak yang memiliki ketertarikan berkarier di bidang IT. Menguasai beberapa bahasa pemrograman seperti Javascript, Java, HTML, Python, CSS dan PHP. Memiliki pengalaman membuat aplikasi berbasis mobile yang menggunakan database MySQL dan Application Programming Interface(API). Jujur, disiplin dan mampu bekerja dengan baik dalam tim. </p>     
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Skills -->
+    <div class="container-skills" id="container-keahlian">
+        <section id="skills">
+            <h1>Keahlian</h1>
+            <h3>Pemrograman : </h3>
+            <p>React Native</p>
+            <div class="progress-bar" data-max-percentage="60" id="progress-container">
+                <div class="progress-bar-inner" style="width:0%" id="myBar">0%</div>
+            </div>
+            <p>Javascript</p>
+            <div class="progress-bar" data-max-percentage="70" id="progress-container">
+                <div class="progress-bar-inner" style="width:0%" id="myBar">0%</div>
+            </div>
+            <p>HTML</p>
+            <div class="progress-bar" data-max-percentage="90" id="progress-container">
+                <div class="progress-bar-inner" style="width:0%" id="myBar">0%</div>
+            </div>
+            <p>CSS</p>
+            <div class="progress-bar" data-max-percentage="85" id="progress-container">
+                <div class="progress-bar-inner" style="width:0%" id="myBar">0%</div>
+            </div>
+            <p>Java</p>
+            <div class="progress-bar" data-max-percentage="85" id="progress-container">
+                <div class="progress-bar-inner" style="width:0%" id="myBar">0%</div>
+            </div>
+            <p>Python</p>
+            <div class="progress-bar" data-max-percentage="87" id="progress-container">
+                <div class="progress-bar-inner" style="width:0%" id="myBar">0%</div>
+            </div>
+            <p>Java</p>
+            <div class="progress-bar" data-max-percentage="85" id="progress-container">
+                <div class="progress-bar-inner" style="width:0%" id="myBar">0%</div>
+            </div>
+            <p>PHP</p>
+            <div class="progress-bar" data-max-percentage="55" id="progress-container">
+                <div class="progress-bar-inner" style="width:0%" id="myBar">0%</div>
+            </div>
+            <p>C++</p>
+            <div class="progress-bar" data-max-percentage="50" id="progress-container">
+                <div class="progress-bar-inner" style="width:0%" id="myBar">0%</div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-experience" id="container-pengalaman">
+        <section id="experience">
+            <h1>Pengalaman</h1>
+
+            <div class="work-experience">
+                <h2>Pengalaman Kerja</h2>
+                <h3>Januari 2023 - April 2023</h3>
+                <h5>PT. Mitra Sinerji Teknoindo | Bandung (Praktik Kerja Lapangan)</h5>
+                <ul>
+                    <li>Membuat Aplikasi Manajemen Asset berbasis mobile dengan bahasa pemrograman Java dan database mySQL </li>
+                    <li>Membuat User Manual Guide dari sebuah aplikasi</li>
+                    <li>Membuat desain poster untuk aplikasi</li>
+                </ul>
+                
+
+                <h3>Juli 2023 - Januari 2024</h3>
+                <h5>PT. Sopwer Teknologi Indonesia | Bandung</h5>
+                <ul>
+                    <li>
+                        Mengembangkan Aplikasi E - commerce dengan React Native dan Application Programming Interface(API)
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div class="project-experience">
+                <h2>Pengalaman Projek</h2>
+                <h3>Mobile</h3>
+                <ul>
+                    <li>
+                        Aplikasi E - commerce dengan React Native dan Application Programming Interface(API)
+                    </li>
+                    <li>
+                        Aplikasi Manajemen Aset dengan Bahasa Pemrograman Java dan Database MySQL
+                    </li>
+                    <li>
+                        Aplikasi belajar mengenal huruf, angka, hewan dan buah - buahan dengan Bahasa Pemograman Java
+                    </li>      
+                </ul>
+                                      
+            </div>
+        </section>
+    </div>
+
+    <!-- Education -->
+    <div class="container-education" id="container-pendidikan">
+        <section id="education">
+            <h1>Pendidikan</h1>
+            <div class="content-education">
+                <img src="assets/images/Logo_STM.png" style="width: 64px; height: 64px">
+                <h2>2019 - 2023</h2>
+                <h3>SMK Negeri 1 Cimahi</h3>
+                <h4>Rekayasa Perangkat Lunak</h4>
+                <ul>
+                    <li>
+                        Mempelajari dasar - dasar pemrograman
+                    </li>
+                    <li>
+                        Mempelajari Object Oriented Programming
+                    </li>
+                    <li>
+                        Mempelajari Database MySQL
+                    </li>
+                    <li>
+                        Mempelajari desain grafis
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+    </div>
+
+    <!-- Portofolio -->
+    <div class="container-portofolio" id="container-portofolio">
+        <section id="portofolio">
+            <h1>Portofolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="slider-container">
+                        <div class="slider" id="slider1">
+                            <div class="slide"><img src="assets/images/Asset_1.jpg" alt="Image 1"></div>
+                            <div class="slide"><img src="assets/images/Asset_2.jpg" alt="Image 2"></div>
+                            <div class="slide"><img src="assets/images/Asset_3.jpg" alt="Image 3"></div>
+                            <div class="slide"><img src="assets/images/Asset_4.jpg" alt="Image 4"></div>
+                            <div class="slide"><img src="assets/images/Asset_5.jpg" alt="Image 5"></div>
+                            <div class="slide"><img src="assets/images/Asset_6.jpg" alt="Image 6"></div>
+                            <div class="slide"><img src="assets/images/Asset_7.jpg" alt="Image 7"></div>
+                            <div class="slide"><img src="assets/images/Asset_8.jpg" alt="Image 8"></div>
+                            <div class="slide"><img src="assets/images/Asset_9.jpg" alt="Image 9"></div>
+                        </div>
+                        <button class="slider-btn prev" onclick="prevSlide('slider1')">❮</button>
+                        <button class="slider-btn next" onclick="nextSlide('slider1')">❯</button>
+                    </div>
+                    <div class="desc">
+                        <h3>Aplikasi Manajemen Aset</h3>
+                        <p>Aplikasi ini dibuat dengan bahasa pemrograman Java dan menggunakan database MySQL. Aplikasi ini dapat memudahkan pengguna dalam mengelola asset.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="work">
+                    <div class="slider-container">
+                        <div class="slider" id="slider2">
+                            <div class="slide"><img src="assets/images/Sakeena_1.jpeg" alt="Image 1"></div>
+                            <div class="slide"><img src="assets/images/Sakeena_2.jpeg" alt="Image 2"></div>
+                            <div class="slide"><img src="assets/images/Sakeena_3.jpeg" alt="Image 3"></div>
+                            <div class="slide"><img src="assets/images/Sakeena_4.jpeg" alt="Image 4"></div>
+                            <div class="slide"><img src="assets/images/Sakeena_5.jpeg" alt="Image 5"></div>
+                            <div class="slide"><img src="assets/images/Sakeena_6.jpeg" alt="Image 6"></div>
+                        </div>
+                        <button class="slider-btn prev" onclick="prevSlide('slider2')">❮</button>
+                        <button class="slider-btn next" onclick="nextSlide('slider2')">❯</button>
+                    </div>
+
+                    <div class="desc">
+                        <h3>Aplikasi E - Commerce</h3>
+                        <p>Aplikasi ini dibuat dengan React Native dan menggunakan Application Programming Interface</p>
+                    </div>
+                    
+                </div>
+
+                <div class="work">
+                    <div class="slider-container">
+                        <div class="slider" id="slider3">
+                            <div class="slide"><img src="assets/images/Pan_1.jpeg" alt="Image 1"></div>
+                            <div class="slide"><img src="assets/images/Pan_2.jpeg" alt="Image 2"></div>
+                            <div class="slide"><img src="assets/images/Pan_3.jpeg" alt="Image 3"></div>
+                            <div class="slide"><img src="assets/images/Pan_4.jpeg" alt="Image 4"></div>
+                        </div>
+                        <button class="slider-btn prev" onclick="prevSlide('slider3')">❮</button>
+                        <button class="slider-btn next" onclick="nextSlide('slider3')">❯</button>
+                    </div>
+                    <div class="desc">
+                        <h3>Aplikasi Belajar Bersama PanPan</h3>
+                        <p>Aplikasi ini dibuat dengan bahasa pemrograman Java. Aplikasi ini dibuat untuk memudahkan balita dalam belajar.</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact -->
+    <div class="container-contact" id="container-contact">
+        <div class="contact-opacity"></div>
+        <section id="contact">
+            <h1>Kontak</h1>
+            <div class="contact-list">
+                <div class="contact-position">
+                    <div class="wrapper-contact">
+                        <div class="container-content-contact">
+                            <div class="content-contact">
                                 <img src="assets/images/telephone-call.png" class="icon">
                                 <p>089516138441</p>
                             </div>
-                            
-                            <div class="data-contact">
-                                <img src="assets/images/location.png" class="icon">
-                                <p>Pasirkaliki, Cimahi Utara Kota Cimahi, Jawa Barat 40514</p>
-                            </div>
-    
                         </div>
+                    </div>
     
-                        <div class="info-contact">
-                            <div class="data-contact">
+                    <div class="wrapper-contact">
+                        <div class="container-content-contact">
+                            <div class="content-contact">
+                                <img src="assets/images/location.png" class="icon">
+                                <p>Pasirkaliki, Cimahi Utara </p>
+                                <br>
+                                <p>Kota Cimahi, Jawa Barat 40514</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-contact">
+                        <div class="container-content-contact">
+                            <div class="content-contact">
                                 <img src="assets/images/email.png" class="icon">
                                 <p>nandarestunailani@gmail.com</p>
                             </div>
-                            
-                            <div class="data-contact">
-                                <img src="assets/images/linkedin.png" class="icon">
-                                <a href="https://www.linkedin.com/in/nanda-restu-nailani-757240255">Profile Linkedin Saya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-position">
+                    <div class="wrapper-contact">
+                        <div class="container-content-contact">
+                            <div class="content-contact">
+                                <a href="https://www.linkedin.com/in/nanda-restu-nailani-757240255">
+                                    <img src="assets/images/linkedin.png" class="icon">
+                                </a>
                             </div>
-                            
+                        </div>
+                    </div>
+    
+                    <div class="wrapper-contact">
+                        <div class="container-content-contact">
+                            <div class="content-contact">
+                                <a href="https://github.com/nandanailani">
+                                    <img src="assets/images/github.png" class="icon">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-about-me">
-                <div class="about-me">
-                    <p>Saya seorang lulusan jurusan Rekayasa Perangkat Lunak yang memiliki ketertarikan berkarier di bidang IT. Menguasai beberapa bahasa pemrograman seperti Javascript, Java, HTML, Python, CSS dan PHP. Memiliki pengalaman membuat aplikasi berbasis mobile yang menggunakan database MySQL dan Application Programming Interface(API). Jujur, disiplin dan mampu bekerja dengan baik dalam tim. </p>
-                </div>
-            </div>
-            
-            <div class="container-content">
-                <div class="sidebar">
-                    <div class="education">
-                        <h1>Pendidikan</h1>
-                        <p>SMK Negeri 1 Cimahi</p>
-                        <p>Rekayasa Perangkat Lunak</p>
-                        <p>2019 - 2023</p>
-                    </div>
-        
-                    <div class="skills">
-                        <h1>Keahlian</h1>
-                        <ul>
-                            <li>Pemrograman :
-                                <ul>
-                                    <li>React Native</li>
-                                    <li>HTML</li>
-                                    <li>Javascript</li>
-                                    <li>Java</li>
-                                    <li>PHP</li>
-                                    <li>C++</li>
-                                    <li>SQLite</li>
-                                    <li>CSS</li>
-                                </ul>
-                            </li>
-                            <li>Memahami penggunaan database MySQL</li>
-                            <li>Mampu bekerja dalam tim</li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="vertical-line"></div>
-    
-                <div class="content">
-                    
-        
-                    <div class="work-experience">
-                        <h1>Pengalaman Kerja</h1>
-                        <h3>Januari 2023 - April 2023</h3>
-                        <h5>PT. Mitra Sinerji Teknoindo | Bandung (Praktik Kerja Lapangan)</h5>
-                        <ul>
-                            <li>Membuat Aplikasi Manajemen Asset berbasis mobile dengan bahasa pemrograman Java dan database mySQL </li>
-                            <li>Membuat User Manual Guide dari sebuah aplikasi</li>
-                            <li>Membuat desain poster untuk aplikasi</li>
-                        </ul>
-        
-                        <h3>Juli 2023 - Januari 2024</h3>
-                        <h5>PT. Sopwer Teknologi Indonesia | Bandung</h5>
-                        <ul>
-                            <li>Mengembangkan Aplikasi Marketplace dengan React Native dan Application Programming Interface(API)</li>
-                            <li>Membuat Aplikasi Rumah Rumus dengan bahasa pemrograman python</li>
-                            <li>Membuat Aplikasi Sosial Media dengan bahasa pemrograman python</li>
-                        </ul>
-                    </div>
-        
-                    <div class="project-experience">
-                        <h1>Pengalaman Projek</h1>
-                        <h3>Mobile</h3>
-                        <ul>
-                            <li>
-                                Aplikasi Marketplace dengan React Native dan Application Programming Interface(API)
-                            </li>
-                            <li>
-                                Aplikasi Manajemen Aset dengan Bahasa Pemrograman Java dan Database MySQL
-                            </li>
-                            <li>
-                                Aplikasi belajar mengenal huruf, angka, hewan dan buah - buahan dengan Bahasa Pemograman Java
-                            </li>                            
-                        </ul>
-                        <h3>Website</h3>
-                        <ul>
-                            <li>
-                                Aplikasi pemesanan tiket bioskop dengan Bahasa Pemrograman PHP dan database MySQL
-                            </li>
-                        </ul>
-                        <h3>Desktop</h3>
-                        <ul>
-                            <li>
-                                Aplikasi pemesanan tiket kereta api dengan Bahasa Pemrograman Java dan database MySQL
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
+
+
+
+    <script>
+        function move(element, maxPercentage) {
+            var width = 0;
+            var id = setInterval(frame, 10);
+
+            function frame() {
+                if (width >= maxPercentage) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    element.style.width = width + '%';
+                    element.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+
+        var options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        var observer = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    var progressBars = entry.target.querySelectorAll('.progress-bar-inner');
+                    progressBars.forEach(function (progressBar) {
+                        var maxPercentage = progressBar.parentNode.getAttribute('data-max-percentage');
+                        move(progressBar, maxPercentage);
+                    });
+
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        var target = document.getElementById('container-keahlian');
+        observer.observe(target);
+
+
+        //Portofolio
+
+        function nextSlide(sliderId) {
+            const slider = document.getElementById(sliderId);
+            slider.style.transform = 'translateX(-20%)';
+            setTimeout(() => {
+                const firstSlide = slider.firstElementChild;
+                slider.appendChild(firstSlide);
+                slider.style.transform = 'translateX(0)';
+            }, 500);
+        }
+    
+        function prevSlide(sliderId) {
+            const slider = document.getElementById(sliderId);
+            const lastSlide = slider.lastElementChild;
+            slider.insertBefore(lastSlide, slider.firstElementChild);
+            slider.style.transform = 'translateX(-20%)';
+            setTimeout(() => {
+                slider.style.transform = 'translateX(0)';
+            }, 0);
+        }
+
+
+        function toggleMenu() {
+            var menu = document.querySelector('.menu > ul');
+            menu.classList.toggle('show');
+        }
+    </script>
+    
 </body>
+
 </html>

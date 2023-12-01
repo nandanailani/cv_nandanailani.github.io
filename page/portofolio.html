@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style_portofolio.css">
+    <title>CV  Nanda Restu Nailani</title>
+    <link rel="icon" href="../assets/images/cv.png" type="image/png">
+</head>
+<body>
+    <!-- Menu -->
+    <nav>
+        <div class="wrapper">
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="portofolio.html">Portofolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-opacity"></div>
+        <!-- Content Header -->
+        <div class="content-header">
+            <h1>Portofolio</h1>
+        </div>
+    </header>
+
+    <div id="portofolio">
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <div class="slider-container">
+                        <div class="slider" id="slider1">
+                            <div class="slide"><img src="../assets/images/Asset_1.jpg" alt="Image 1"></div>
+                            <div class="slide"><img src="../assets/images/Asset_2.jpg" alt="Image 2"></div>
+                            <div class="slide"><img src="../assets/images/Asset_3.jpg" alt="Image 3"></div>
+                            <div class="slide"><img src="../assets/images/Asset_4.jpg" alt="Image 4"></div>
+                            <div class="slide"><img src="../assets/images/Asset_5.jpg" alt="Image 5"></div>
+                            <div class="slide"><img src="../assets/images/Asset_6.jpg" alt="Image 6"></div>
+                            <div class="slide"><img src="../assets/images/Asset_7.jpg" alt="Image 7"></div>
+                            <div class="slide"><img src="../assets/images/Asset_8.jpg" alt="Image 8"></div>
+                            <div class="slide"><img src="../assets/images/Asset_9.jpg" alt="Image 9"></div>
+                        </div>
+                        <button class="slider-btn prev" onclick="prevSlide('slider1')">❮</button>
+                        <button class="slider-btn next" onclick="nextSlide('slider1')">❯</button>
+                    </div>
+                    <div class="desc">
+                        <h3>Aplikasi Manajemen Aset</h3>
+                        <p>Aplikasi ini dibuat dengan bahasa pemrograman Java dan menggunakan database MySQL. Aplikasi ini dapat memudahkan pengguna dalam mengelola asset.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="work">
+                    <div class="slider-container">
+                        <div class="slider" id="slider2">
+                            <div class="slide"><img src="../assets/images/Sakeena_1.jpeg" alt="Image 1"></div>
+                            <div class="slide"><img src="../assets/images/Sakeena_2.jpeg" alt="Image 2"></div>
+                            <div class="slide"><img src="../assets/images/Sakeena_3.jpeg" alt="Image 3"></div>
+                            <div class="slide"><img src="../assets/images/Sakeena_4.jpeg" alt="Image 4"></div>
+                            <div class="slide"><img src="../assets/images/Sakeena_5.jpeg" alt="Image 5"></div>
+                            <div class="slide"><img src="../assets/images/Sakeena_6.jpeg" alt="Image 6"></div>
+                        </div>
+                        <button class="slider-btn prev" onclick="prevSlide('slider2')">❮</button>
+                        <button class="slider-btn next" onclick="nextSlide('slider2')">❯</button>
+                    </div>
+
+                    <div class="desc">
+                        <h3>Aplikasi E - Commerce</h3>
+                        <p>Aplikasi ini dibuat dengan React Native dan menggunakan Application Programming Interface</p>
+                    </div>
+                    
+                </div>
+
+                <div class="work">
+                    <div class="slider-container">
+                        <div class="slider" id="slider3">
+                            <div class="slide"><img src="../assets/images/Pan_1.jpeg" alt="Image 1"></div>
+                            <div class="slide"><img src="../assets/images/Pan_2.jpeg" alt="Image 2"></div>
+                            <div class="slide"><img src="../assets/images/Pan_3.jpeg" alt="Image 3"></div>
+                            <div class="slide"><img src="../assets/images/Pan_4.jpeg" alt="Image 4"></div>
+                        </div>
+                        <button class="slider-btn prev" onclick="prevSlide('slider3')">❮</button>
+                        <button class="slider-btn next" onclick="nextSlide('slider3')">❯</button>
+                    </div>
+                    <div class="desc">
+                        <h3>Aplikasi Belajar Bersama PanPan</h3>
+                        <p>Aplikasi ini dibuat dengan bahasa pemrograman Java. Aplikasi ini dibuat untuk memudahkan balita dalam belajar.</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function nextSlide(sliderId) {
+            const slider = document.getElementById(sliderId);
+            slider.style.transform = 'translateX(-20%)';
+            setTimeout(() => {
+                const firstSlide = slider.firstElementChild;
+                slider.appendChild(firstSlide);
+                slider.style.transform = 'translateX(0)';
+            }, 500);
+        }
+    
+        function prevSlide(sliderId) {
+            const slider = document.getElementById(sliderId);
+            const lastSlide = slider.lastElementChild;
+            slider.insertBefore(lastSlide, slider.firstElementChild);
+            slider.style.transform = 'translateX(-20%)';
+            setTimeout(() => {
+                slider.style.transform = 'translateX(0)';
+            }, 0);
+        }
+    </script>
+</body>
